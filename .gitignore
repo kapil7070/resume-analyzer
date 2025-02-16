@@ -1,0 +1,26 @@
+
+
+# Ignore compiled object files
+*.o
+*.obj
+
+# Ignore executables
+*.exe
+*.out
+
+# Ignore debug symbols
+*.pdb
+
+# Ignore build artifacts
+*.dll
+*.lib
+*.so
+*.a
+
+# Ignore temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
