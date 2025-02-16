@@ -1,0 +1,4 @@
+Name: Robert Brown
+Education: Bachelor
+Experience: 4 years
+Skills: React, Node.js, Express.js, MongoDB, REST APIs, TypeScript

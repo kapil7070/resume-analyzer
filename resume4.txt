@@ -1,0 +1,4 @@
+Name: Emily Davis
+Education: Bachelor
+Experience: 3 years
+Skills: AWS, Azure, Docker, Kubernetes, Terraform
