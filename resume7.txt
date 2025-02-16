@@ -1,0 +1,4 @@
+Name: David Miller
+Education: Master
+Experience: 3 years
+Skills: Python, TensorFlow, NLP, SQL, Deep Learning

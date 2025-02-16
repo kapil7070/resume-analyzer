@@ -1,0 +1,4 @@
+Name: John Doe
+Education: Bachelor's in Computer Science
+Experience: 3
+Skills: C, C++, Java, Python

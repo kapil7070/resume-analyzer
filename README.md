@@ -56,3 +56,56 @@ After building the project, run the program from the command line. For example, 
  .\main.exe "Software Engineer" resume1.txt resume2.txt
 ```
 
+
+
+Resume Samples
+
+resume1.txt (Software Engineer)
+
+Name: John Doe
+Education: Bachelor
+Experience: 3 years
+Skills: C, C++, Java, Python, SQL
+
+resume2.txt (Data Scientist)
+
+Name: Alice Smith
+Education: Master
+Experience: 4 years
+Skills: Python, R, Machine Learning, Data Visualization, SQL
+
+resume3.txt (Cyber Security Analyst)
+
+Name: Michael Johnson
+Education: Bachelor
+Experience: 2 years
+Skills: Network Security, Penetration Testing, Ethical Hacking, SIEM Tools
+
+resume4.txt (Cloud Engineer)
+
+Name: Emily Davis
+Education: Bachelor
+Experience: 3 years
+Skills: AWS, Azure, Docker, Kubernetes, Terraform
+
+resume5.txt (Full Stack Developer)
+
+Name: Robert Brown
+Education: Bachelor
+Experience: 4 years
+Skills: React, Node.js, Express.js, MongoDB, REST APIs, TypeScript
+
+resume6.txt (Software Engineer - Another Candidate)
+
+Name: Sarah Johnson
+Education: Bachelor
+Experience: 5 years
+Skills: Java, Python, JavaScript, SQL, Git
+
+resume7.txt (Data Scientist - Another Candidate)
+
+Name: David Miller
+Education: Master
+Experience: 3 years
+Skills: Python, TensorFlow, NLP, SQL, Deep Learning
+

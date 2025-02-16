@@ -1,0 +1,4 @@
+Name: Alice Smith
+Education: Master
+Experience: 4 years
+Skills: Python, R, Machine Learning, Data Visualization, SQL
