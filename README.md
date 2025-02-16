@@ -1,66 +1,58 @@
-# Resume Analysis System
+# Resume Analyzer
 
-This is an educational Resume Analysis System implemented in C that demonstrates fundamental programming concepts. The system allows users to:
-- Add and manage resumes with skills and experience
-- Add job positions with requirements
-- Analyze how well a resume matches a job position
-- Get detailed feedback and recommendations
+## Description
+
+The Resume Analyzer is a modular C program that reads one or more resume files, analyzes them against specific job requirements, scores each resume, and then selects the best candidate based on the highest score. The program follows a modular design with header files in the `header` folder and source files in the `src` folder.
 
 ## Project Structure
-```
-├── include/
-│   ├── resume.h    (Header file with data structures and function declarations)
-│   └── utils.h     (Header file for utility functions)
-├── src/
-│   ├── main.c      (Main program with menu interface)
-│   ├── resume.c    (Resume and job matching implementation)
-│   └── utils.c     (Helper functions for UI and input)
-├── Makefile        (For easy compilation)
-└── README.md       (This file)
-```
 
-## How to Compile and Run
+project/ 
+├── header/ │ 
+   ├── resume.h │ 
+   ├── resume_parser.h │ 
+   ├── job.h │ ├── scoring.h │ 
+   └── utils.h 
+   
+└── src/ 
+├── main.c 
+├── resume_parser.c 
+├── job.c 
+├── scoring.c 
+└── utils.c
 
-### Using Make (Recommended)
-1. Open terminal in the project directory
-2. Run:
-   ```bash
-   make
-   ./resume_analyzer
-   ```
 
-### Manual Compilation
-If you don't have Make installed, you can compile manually:
+## Resume File Format
+
+Each resume file should be a plain text file formatted as follows (order of lines can vary):
+Name: John Doe 
+Education: Bachelor's in Computer Science 
+Experience: 3 
+Skills: C, C++, Java, Python
+
+
+## Prerequisites
+
+- A C compiler such as GCC or Microsoft Visual Studio's `cl.exe`.
+- **Windows Users:** The project includes a macro to map `strcasecmp` to `_stricmp` for MSVC compatibility.
+
+## Build Instructions
+
+### Using GCC (Linux/Windows MinGW)
+
+Open a terminal in the project directory and run:
+
 ```bash
-gcc src/main.c src/resume.c src/utils.c -o resume_analyzer
-./resume_analyzer
+gcc -I header src/main.c src/resume_parser.c src/job.c src/scoring.c src/utils.c -o resume_analyzer
+```
+Using MSVC (cl.exe)
+Open the Developer Command Prompt and run:
+
+```bash
+cl /I header src\main.c src\resume_parser.c src\job.c src\scoring.c src\utils.c 
+```
+Execution
+After building the project, run the program from the command line. For example, to analyze resumes for a "Software Engineer" position:
+```bash
+ .\main.exe "Software Engineer" resume1.txt resume2.txt
 ```
 
-## Features
-1. Resume Management
-   - Add new resumes with personal information
-   - Input skills and work experience
-   - View all stored resumes
-
-2. Job Position Management
-   - Add new job positions
-   - Specify required skills and experience
-   - View all job positions
-
-3. Analysis and Matching
-   - Compare resumes against job requirements
-   - Get detailed match analysis
-   - Receive recommendations for improvement
-
-## Usage
-1. Start by adding a resume (Option 1)
-2. Add a job position (Option 2)
-3. Use the analysis feature (Option 5) to see how well the resume matches the job
-
-## Educational Value
-This project demonstrates:
-- Structured Programming in C
-- Data Structures (structs)
-- File I/O Operations
-- User Input Handling
-- Algorithm Implementation (matching logic)
